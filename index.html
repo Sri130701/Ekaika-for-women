@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the authentic flavors of traditional Indian snacks with Veerabhadra Snacks. Shop online for freshly made laddus, murukku, banana chips, and more!">
+    <title>Veerabhadra Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc66;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #4c3c00;
+        }
+
+        nav {
+            background-color: #e68a00;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('images/hero-snacks.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .hero .cta-button {
+            background-color: #e68a00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .featured-snacks {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .snack-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .snack-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .snack-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .snack-item h3 {
+            margin: 10px 0;
+        }
+
+        .snack-item p {
+            padding: 0 10px;
+            color: #555;
+        }
+
+        .snack-item button {
+            background-color: #e68a00;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .snack-item button:hover {
+            background-color: #d76a00;
+        }
+
+        .testimonial {
+            background-color: #fff7e6;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .testimonial h2 {
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial .customer {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #4c3c00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Veerabhadra Snacks</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#snacks">Our Snacks</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">Shop Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Authentic Indian Snacks, Made with Love</h2>
+        <a href="#snacks" class="cta-button">Explore Snacks</a>
+    </div>
+
+    <section id="snacks" class="container">
+        <h2>Our Featured Snacks</h2>
+        <div class="featured-snacks">
+            <div class="snack-item">
+                <img src="images/murukku.jpg" alt="Murukku">
+                <h3>Murukku</h3>
+                <p>Crispy, crunchy, and perfect for every occasion.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="snack-item">
+                <img src="images/laddu.jpg" alt="Laddu">
+                <h3>Laddu</h3>
+                <p>Sweet and delicious, made with pure ghee.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="snack-item">
+                <img src="images/banana-chips.jpg" alt="Banana Chips">
+                <h3>Banana Chips</h3>
+                <p>Thinly sliced and fried to golden perfection.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <h2>What Our Customers Say</h2>
+        <p>"The best snacks I've ever tasted! Fresh and flavorful."</p>
+        <p class="customer">- Priya, Bengaluru</p>
+        <p>"Amazing quality and authentic taste. Highly recommend!"</p>
+        <p class="customer">- Ramesh, Chennai</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>At Veerabhadra Snacks, we are passionate about bringing you the finest traditional Indian snacks. Each item is crafted with care and made from the freshest ingredients to ensure you get the best taste and quality. Whether it's a festival or a casual tea-time, our snacks are perfect companions.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or special requests? Reach out to us!</p>
+        <p>Email: contact@veerabhadrasnacks.com</p>
+        <p>Phone: +91-9876543210</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Veerabhadra Snacks. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
