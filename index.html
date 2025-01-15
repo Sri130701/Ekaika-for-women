@@ -4,177 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the authentic flavors of traditional Indian snacks with Veerabhadra Snacks. Shop online for freshly made laddus, murukku, banana chips, and more!">
-    <title>Veerabhadra Snacks</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ekaika - Empowering Women</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f9f9f9;
         }
 
         header {
-            background-color: #ffcc66;
+            background-color: #ff8c00;
+            color: white;
             padding: 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #4c3c00;
         }
 
         nav {
-            background-color: #e68a00;
-            padding: 10px 0;
-        }
-
-        nav ul {
             display: flex;
             justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            background-color: #333;
         }
 
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        nav a {
             color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
         }
 
         .hero {
-            background: url('images/hero-snacks.jpg') no-repeat center center/cover;
-            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 70vh;
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            color: #666;
+        }
+
+        .card-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            position: relative;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            animation: fadeIn 2s ease-in;
-        }
-
-        .hero .cta-button {
-            background-color: #e68a00;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .featured-snacks {
-            display: flex;
             gap: 20px;
             flex-wrap: wrap;
-            justify-content: center;
         }
 
-        .snack-item {
+        .card {
+            background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
-            overflow: hidden;
+            padding: 20px;
             width: 300px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .snack-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .snack-item img {
+        .card img {
             width: 100%;
-            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
         }
 
-        .snack-item h3 {
-            margin: 10px 0;
+        .card h3 {
+            margin-top: 0;
         }
 
-        .snack-item p {
-            padding: 0 10px;
-            color: #555;
-        }
-
-        .snack-item button {
-            background-color: #e68a00;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            margin: 10px;
-            border-radius: 5px;
-        }
-
-        .snack-item button:hover {
-            background-color: #d76a00;
-        }
-
-        .testimonial {
-            background-color: #fff7e6;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .testimonial h2 {
-            margin-bottom: 20px;
-        }
-
-        .testimonial p {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .testimonial .customer {
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #4c3c00;
+        .footer {
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 20px;
         }
 
-        footer ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        footer ul li a {
-            color: white;
+        .footer a {
+            color: #ff8c00;
             text-decoration: none;
         }
     </style>
@@ -182,74 +112,64 @@
 
 <body>
     <header>
-        <h1>Veerabhadra Snacks</h1>
+        <h1>Ekaika</h1>
+        <p>Empowering Women Through Financial Literacy and Business Development</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#snacks">Our Snacks</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#shop">Shop Now</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
-        <h2>Tradition Meets Wellness</h2>
-        <a href="#snacks" class="cta-button">Explore Snacks</a>
-    </div>
 
-    <section id="snacks" class="container">
-        <h2>Our Featured Snacks</h2>
-        <div class="featured-snacks">
-            <div class="snack-item">
-                <img src="images/murukku.jpg" alt="Murukku">
-                <h3>Murukku</h3>
-                <p>Crispy, crunchy, and perfect for every occasion.</p>
-                <button>Add to Cart</button>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#impact">Our Impact</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Be Your Own Boss</h1>
+            <p>Join Ekaika and turn your dreams into reality. Learn, grow, and lead the way!</p>
+            <button style="padding: 10px 20px; background-color: #ff8c00; color: white; border: none; border-radius: 5px; cursor: pointer;">Get Started</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Ekaika</h2>
+        <p>Ekaika aims to empower women through financial literacy and business development education. Our affordable and accessible courses help women monetize their passions and achieve financial independence.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Women Empowerment Image">
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Our Courses</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Financial Literacy">
+                <h3>Financial Literacy</h3>
+                <p>Learn budgeting, saving, debt management, and investment strategies to secure your financial future.</p>
             </div>
-            <div class="snack-item">
-                <img src="images/laddu.jpg" alt="Laddu">
-                <h3>Laddu</h3>
-                <p>Sweet and delicious, made with pure ghee.</p>
-                <button>Add to Cart</button>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Business Development">
+                <h3>Business Development</h3>
+                <p>Master entrepreneurship, marketing, financial management, and legal aspects to grow your business.</p>
             </div>
-            <div class="snack-item">
-                <img src="images/banana-chips.jpg" alt="Banana Chips">
-                <h3>Banana Chips</h3>
-                <p>Thinly sliced and fried to golden perfection.</p>
-                <button>Add to Cart</button>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Personalized Guidance">
+                <h3>Personalized Guidance</h3>
+                <p>Get one-on-one mentorship tailored to your business goals and challenges.</p>
             </div>
         </div>
     </section>
 
-    <section class="testimonial">
-        <h2>What Our Customers Say</h2>
-        <p>"The best snacks I've ever tasted! Fresh and flavorful."</p>
-        <p class="customer">- Priya, Bengaluru</p>
-        <p>"Amazing quality and authentic taste. Highly recommend!"</p>
-        <p class="customer">- Ramesh, Chennai</p>
+    <section id="impact" class="section">
+        <h2>Our Impact</h2>
+        <p>Over the past year, Ekaika has helped hundreds of women become financially independent and launch successful businesses, creating a ripple effect of positive change in their communities.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Impact Image">
     </section>
 
-    <section id="about" class="container">
-        <h2>About Us</h2>
-        <p>At Veerabhadra Snacks, we are passionate about bringing you the finest traditional Indian snacks. Each item is crafted with care and made from the freshest ingredients to ensure you get the best taste and quality. Whether it's a festival or a casual tea-time, our snacks are perfect companions.</p>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>Have questions or special requests? Reach out to us!</p>
-        <p>Email: contact@veerabhadrasnacks.com</p>
-        <p>Phone: +91-9876543210</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Veerabhadra Snacks. All Rights Reserved.</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+    <footer class="footer">
+        <p>&copy; 2025 Ekaika | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>Follow us on: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
     </footer>
 </body>
 
 </html>
+
+
